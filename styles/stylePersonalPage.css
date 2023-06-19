@@ -1,0 +1,335 @@
+/* ОБЩИЕ СТИЛИ */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+html{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: Gotham Pro;
+    src: url("../fonts/gothampro.ttf");
+}
+
+@font-face {
+    font-family: Gotham Pro-Medium;
+    src: url("../fonts/gothampro_medium.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Gotham Pro-Bold;
+    src: url("../fonts/gothampro_bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Monserrat;
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+@font-face {
+    font-family: Monserrat-Medium;
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+/* СТИЛИ ОСНОВНОГО БЛОКА */
+
+.backgroundGradient{
+    position: relative;
+    margin-top: 1px;
+}
+.backgroundTrees{
+    position: absolute;
+    top: 1px;
+}
+.header-main{
+    position: absolute;
+    top: 1px;
+}
+.header{
+    position: absolute;
+}
+.logo{
+    display: flex;
+    position: absolute;
+    top: 38px;
+    margin-left: 111px;
+}
+.head-button ul {
+    margin-left: 130.76px;
+    list-style: none;
+    display: flex;
+    top: 43px;
+    color: #000000;
+}
+
+.head-button a:hover {
+    color: #9747FF;
+}
+
+.menu-item {
+    position: relative;
+    margin-right: 27px;
+    top: 10px;
+    font-family: Monserrat;
+    font-size: 24px;
+    width: 201px;
+    height: 29px;
+    background: transparent;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #000000;
+}
+.middle-block{
+    position: absolute;
+    width: 1013px;
+    height: 587px;
+    left: 376px;
+    top: 493px;
+}
+
+/* СТИЛИ ТАБОВ */
+
+p {
+    max-width: 1013px;
+    margin: 0 0 10px;
+    height: 587px;
+    max-height: 517px;
+}
+
+.tabs {
+    position: relative;
+    top: 376px;
+    left: 386px;
+    margin: 50px auto;
+    max-width: 1013px;
+}
+
+.tabs-nav {
+    display: flex;
+    align-content: center;
+}
+
+.tabs-nav-btn {
+    padding-bottom: 20px;
+    width: 235px;
+    height: 92px;
+    font-size: 20px;
+    font-family: Monserrat-Medium;
+    color: #3A3A3A;
+    background-color: #DFDFDF;
+    border: 0;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 25px;
+    z-index: 2;
+}
+
+.tabs-nav-btn:last-child {
+    border-right: none;
+}
+
+.tabs-nav-btn:hover {
+    background-color: #ddd;
+}
+
+.tabs-nav-btn.active {
+    background-color: #fff;
+    color: #3A3A3A;
+}
+
+.tabs-content {
+    position: absolute;
+    margin-top: -25px;
+    padding: 30px;
+    background-color: #fff;
+    z-index: 2;
+
+}
+
+.tabs-item {
+    display: none;
+}
+
+.tabs-item.active {
+    display: block;
+}
+
+.union{
+    position: relative;
+    top: 0px;
+    left: -470px;
+}
+
+/* СТИЛИ БЛОКА ЛИЧНОЙ ИНФОРМАЦИИ */
+
+.warp{
+    position: absolute;
+    top: 280px;
+    right: -774px;
+}
+
+.alert-block{
+    position: absolute;
+    top: 280px;
+    right: -840px;
+}
+
+.circle{
+    position: absolute;
+    top: 28px;
+    left: 88px;
+}
+
+.main-data{
+
+}
+
+.nickname{
+    position: absolute;
+    display: flex;
+    top: 208px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 300px;
+    justify-content: center;
+    align-content: center;
+    font-family: Gotham Pro;
+
+
+
+
+}
+.subs{
+    position: absolute;
+    top: 238px;
+    display: flex;
+
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 300px;
+    justify-content: center;
+    align-content: center;
+
+
+}
+.text-area{
+    position: absolute;
+    top: 268px;
+    left: 42px;
+    border-radius: 50px;
+
+
+
+}
+textarea{
+    padding: 10px;
+    border: none;
+    resize: none;
+    border-radius: 15px;
+    outline: none;
+
+}
+.alert-block-2{
+    position: absolute;
+    left: 55px;
+    top: 30px;
+}
+.alerts{
+    margin-bottom: 15px;
+}
+.message-alert{
+    margin-left: 2px;
+}
+
+.redact{
+    position: absolute;
+    top: 460px;
+    left: 70px;
+}
+.redact-btn{
+    border-radius: 30px;
+    background: #8F8F8F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-color: transparent;
+    padding: 15px 25px;
+    width: 200px;
+    height: 36px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-family: Monserrat;
+}
+.redact-btn:hover{
+    background-color: #999999;
+    cursor: pointer;
+    transform: scale(1.002);
+}
+
+.create-block{
+    position: absolute;
+    top: 553px;
+    left: 70px;
+}
+.circle2{
+    position: absolute;
+    top: 29.52px;
+    left: 25%;
+}
+
+.createProj{
+    position: absolute;
+    top: 23px;
+    left: 23px;
+}
+
+.create-portfolio-button{
+    position: absolute;
+    top: 180px;
+    left: 25px;
+}
+.create-portfolio-btn{
+    border-radius: 30px;
+    background: #8F8F8F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-color: transparent;
+    padding: 15px 25px;
+    width: 186px;
+    height: 36px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-family: Monserrat;
+}
+.create-portfolio-btn:hover{
+    background-color: #999999;
+    cursor: pointer;
+    transform: scale(1.002);
+}
+
+
+
